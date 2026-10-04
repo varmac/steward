@@ -32,7 +32,7 @@
     "zod": "4.5.4"
   },
   "devDependencies": {
-    "@types/node": "24.x",
+    "@types/node": "26.x",
     "@types/pg": "8.23.1",
     "typescript": "7.0.2",
     "vercel": "^59.23.2",
