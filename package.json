@@ -26,7 +26,7 @@
     "@onkernel/browser-loop": "0.12.1",
     "@onkernel/sdk": "0.110.0",
     "@vercel/connect": "^2.3.0",
-    "ai": "^7.0.93",
+    "ai": "^7.0.126",
     "eve": "0.55.0",
     "pg": "8.23.0",
     "zod": "4.5.4"
