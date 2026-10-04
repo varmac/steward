@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    # eve is preview software and pinned on purpose. Upgrade it by hand and
+    # re-run the evals.
+    ignore:
+      - dependency-name: eve
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

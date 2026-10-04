@@ -1,0 +1,44 @@
+{
+  "name": "steward",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A reference personal assistant you text: iMessage channel, approval-gated tools, cloud browser and sandbox, built on eve.",
+  "license": "MIT",
+  "type": "module",
+  "imports": {
+    "#*": "./agent/*",
+    "#evals/*": "./evals/*"
+  },
+  "scripts": {
+    "build": "eve build",
+    "deploy": "eve deploy",
+    "dev": "eve dev",
+    "eval": "eve eval",
+    "start": "eve start",
+    "typecheck": "tsc",
+    "test": "vitest run",
+    "check:public": "node scripts/check-public-tree.mjs",
+    "check": "npm run typecheck && npm test && npm run check:public"
+  },
+  "dependencies": {
+    "@googleapis/calendar": "20.0.0",
+    "@googleapis/gmail": "22.0.0",
+    "@onkernel/browser-loop": "0.12.1",
+    "@onkernel/sdk": "0.110.0",
+    "@vercel/connect": "^2.3.0",
+    "ai": "^7.0.93",
+    "eve": "0.55.0",
+    "pg": "8.23.0",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.x",
+    "@types/pg": "8.23.1",
+    "typescript": "7.0.2",
+    "vercel": "^59.23.2",
+    "vitest": "5.0.1"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
