@@ -21,7 +21,7 @@
     "check": "npm run typecheck && npm test && npm run check:public"
   },
   "dependencies": {
-    "@googleapis/calendar": "20.0.0",
+    "@googleapis/calendar": "20.0.1",
     "@googleapis/gmail": "22.0.0",
     "@onkernel/browser-loop": "0.12.1",
     "@onkernel/sdk": "0.110.0",
